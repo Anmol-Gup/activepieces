@@ -6,6 +6,7 @@ export enum GithubEventType {
   STAR = 'star',
   ISSUES = 'issues',
   PUSH = 'push',
+  COMMIT = 'commit_comment'
 }
 
 export const registered = [
@@ -900,6 +901,12 @@ export const registered = [
       },
     },
   },
+  {
+    name: GithubEventType.COMMIT,
+    displayName: 'New Issue',
+    description: 'Triggers when there is activity relating to an issue.',
+    sampleData: {}
+  }
 ];
 
 export const githubTriggers: Trigger[] = registered.map((def) =>
