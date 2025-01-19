@@ -6,7 +6,7 @@ export enum GithubEventType {
   STAR = 'star',
   ISSUES = 'issues',
   PUSH = 'push',
-  COMMIT = 'commit_comment'
+  COMMIT = 'commit_comment',
 }
 
 export const registered = [
