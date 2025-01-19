@@ -161,7 +161,7 @@ type RequestTrialProps = {
 };
 export const RequestTrial = ({
   featureKey,
-  customButton = t('Request Trial'),
+  customButton = t('Contact Sales'),
 }: RequestTrialProps) => {
   const { capture } = useTelemetry();
   const currentUser = authenticationSession.getCurrentUser();
@@ -239,12 +239,7 @@ export const RequestTrial = ({
       <DrawerTrigger asChild>
         <Button
           onClick={() =>
-            capture({
-              name: TelemetryEventName.REQUEST_TRIAL_CLICKED,
-              payload: {
-                location: featureKey,
-              },
-            })
+            window.open('https://www.activepieces.com/sales', '_blank')
           }
         >
           {customButton}

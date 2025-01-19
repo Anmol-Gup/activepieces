@@ -36,7 +36,7 @@ export default function TeamPage() {
       cloudOnlyFeature={true}
       lockTitle={t('Unlock Team Permissions')}
       lockDescription={t(
-        'You can invite users to your Platform for free in the community edition. For advanced roles and permissions request trial',
+        'You can invite users to your Platform for free in the community edition. For advanced roles and permissions Contact Sales',
       )}
     >
       <div className="flex flex-col items-center justify-center gap-4">
