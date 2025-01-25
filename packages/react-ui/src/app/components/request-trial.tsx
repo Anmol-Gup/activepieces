@@ -27,6 +27,7 @@ type RequestTrialProps = {
   featureKey: FeatureKey;
   customButton?: ReactNode;
 };
+
 export const RequestTrial = ({
   customButton = t('Contact Sales'),
 }: RequestTrialProps) => {
